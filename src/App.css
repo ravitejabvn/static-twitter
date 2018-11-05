@@ -1,5 +1,11 @@
+#root {
+  background: #e8e5e5;
+}
+
 .App {
   text-align: center;
+  width: 90%;
+  margin: auto;
 }
 
 .App-logo {
@@ -22,11 +28,243 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App > div {
+  display: inline-block;
+  vertical-align: top;
+  height: auto;
+  margin: 15px;
+}
+
+.App .small-con {
+  width: 25%;
+}
+.App .large-con {
+  width: 40%;
+}
+
+.profile > div {
+  margin-bottom: 15px;
+}
+
+.main-profile, .followers {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.main-profile .bg-img {
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.main-pro-img {
+  border: 2px solid #25ad9f;
+  margin-top: -50px;
+  width: 100px;
+  height: 100px;
+}
+
+.login-profile {
+  background: #ffffff;
+  padding: 10px 10px 0px 10px;
+  text-align: left;
+  border-radius: 10px;
+}
+
+.counters {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.counters > div {
+  flex: 1;
+}
+
+.counters > div span {
+  display: block;
+}
+
+.pro-img  {
+  width: 60px;
+  height: 60px;
+}
+
+.pro-name {
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.change-user {
+  margin: 0px -10px;
+  padding: 10px;
+  background: #b4d1ea;
+}
+
+.change-user i {
+  float: right;
+  cursor: pointer;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+.change-user-list {
+  background: #ffffff;
+  width: 70%;
+  float: right;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.change-user-list li span{
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
+
+.display-none {
+  display: none;
+}
+
+.change-user-list li{
+  list-style: none;
+  cursor: pointer;
+  text-align: left;
+  padding: 5px;
+}
+.change-user-list li:first-child {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.change-user-list li:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.change-user-list li:hover,
+.change-user-list li.active {
+  background: #b4d1ea
+}
+
+.large-con > div {
+  width: 100%;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.post-it {
+  background: #b4d1ea;
+  padding: 10px 20px 50px;
+}
+
+.post-elms img {
+  display: inline-block;
+  width: 10%;
+  vertical-align: top;
+}
+
+.post-elms textarea {
+  display: inline-block;
+  width: 85%;
+  height: 80px;
+  border: 1px solid #428bca;
+  outline: none;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+.btn-post {
+  background: #428bca;
+  border: 1px solid #428bca;
+  outline: none;
+  padding: 8px 35px;
+  border-radius: 20px;
+  color: #ffffff;
+  margin-top: 10px;
+  float: right;
+}
+
+.posts {
+  background: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.posts .pro-img {
+  display: inline-block;
+  width: 10%;
+  vertical-align: top;
+}
+
+.posts div {
+  display: inline-block;
+  width: 85%;
+}
+
+.posts div > span {
+  display: block;
+  margin-left: 10px;
+  text-align: start;
+}
+
+.post-date {
+  font-size: 12px;
+}
+
+.post-img {
+  width: 100%;
+}
+
+.followers li {
+  list-style: none;
+  display: flex;
+  border-bottom: 1px solid#ccc;
+  padding: 10px;
+}
+
+li img {
+  flex: 1;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.follow-name {
+  flex: 4;
+  text-align: start;
+  margin-left: 10px;
+}
+
+li span {
+  align-self: center;
+}
+
+.icon {
+  border: 1px solid #428bca;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.icon i {
+  padding: 5px 10px;
+  color: #428bca;
+}
+
+.icon .fa-check {
+  background: #428bca;
+  color: #ffffff;
+}
+
+.fas {
+  width: 20px;
+}
+
+.followers li:last-child {
+  border: none;
 }

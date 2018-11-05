@@ -1,0 +1,73 @@
+{
+    "data":{
+        "profile": {
+            "profileName":"Captain America",
+            "profileImg":"/img/cap.jpg",
+            "profileId":987,
+            "bgImg": "/img/bg-img.jpg",
+            "posts": 2,
+            "following": 1
+        },
+        "users": [
+            {
+                "userName":"Iron Man",
+                "userId":213,
+                "userImg":"/img/ironman.jpg"
+            },{
+                "userName":"Captain America",
+                "userId": 987,
+                "userImg":"/img/cap.jpg"
+            },{
+                "userName":"Black Widow",
+                "userId":123,
+                "userImg":"/img/ironman.png"
+            },{
+                "userName":"Thor",
+                "userId":234,
+                "userImg":"/img/thor.jpg"
+            },{
+                "userName":"Hulk",
+                "userId":345,
+                "userImg":"/img/hulk.jpg"
+            }
+        ],
+        "followUsers": [
+            {
+                "userName":"Iron Man",
+                "userId":213,
+                "userImg":"/img/ironman.jpg",
+                "isFollow": true
+            },{
+                "userName":"Black Widow",
+                "userId":123,
+                "userImg":"/img/ironman.png",
+                "isFollow": false
+            },{
+                "userName":"Thor",
+                "userId":234,
+                "userImg":"/img/thor.jpg",
+                "isFollow": false
+            },{
+                "userName":"Hulk",
+                "userId":345,
+                "userImg":"/img/hulk.jpg",
+                "isFollow": false
+            }
+        ],
+        "posts": [
+            {
+                "content": "I recently made a switch from Xperia Android to iPhone. I transferred most of the data like contacts, text messages, photo, videos, etc. from my Android to new iPhone with the 'Move to iOS' app. But unfortunately, it couldn't transfer WhatsApp chat history from Android to iOS device. And then I found this guide using Google search.",
+                "postId": 12345,
+                "postProImg":"/img/cap.jpg",
+                "postTime":"2018-11-05T07:53:46.974Z",
+                "postImg":""
+            }, {
+                "content": "App/program mentioned in the above guide worked for me and copied all the WhatsApp conversations with attachments from my Xperia (Android) to my new iPhone 6s. As per the information available on the website, it can transfer WhatsApp chats from any Android device to iPhone as long as your iPhone has iOS 5 or later like iOS 10, iOS 11 or any other latest iOS version.",
+                "postId": 12346,
+                "postProImg":"/img/thor.jpg",
+                "postTime": "2018-10-09T12:00:00.000Z",
+                "postImg":"/img/bg-img.jpg"
+            }
+        ]
+    }
+}

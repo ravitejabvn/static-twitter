@@ -1,5 +1,6 @@
 export default function userStore(state = {}, action){
 
+    let ctSt = JSON.parse(JSON.stringify(state));
     switch(action.type) {
         case 'LOAD_DATA' : 
             let data = action.data;
@@ -7,20 +8,17 @@ export default function userStore(state = {}, action){
 
         case 'CHANGE_USER':
             let usrId = action.userId;
-            let ctSt = JSON.parse(JSON.stringify(state));
             let rtnSt = updateUser(ctSt, usrId);
             return rtnSt;
 
         case 'CHANGE_FOLLOWER':
             let userId = action.userId;
-            let crntState = JSON.parse(JSON.stringify(state));
-            let rtrnState = updateFolloState(crntState, userId);
+            let rtrnState = updateFolloState(ctSt, userId);
             return rtrnState;
 
         case 'POST_COMMENT':
             let coment = action.content;
-            let cntSt = JSON.parse(JSON.stringify(state));
-            let rtState = updatePosts(cntSt, coment);
+            let rtState = updatePosts(ctSt, coment);
 
             return rtState;
 
